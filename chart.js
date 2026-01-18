@@ -5,7 +5,7 @@ d3.csv('boston_311_2025_by_reason.csv').then(data => {
         d.Count = +d.Count;
     });
 
-    // Sort by count in descending order (largest first)
+    // Sort by count in descending order (largest at the top)
     data.sort((a, b) => b.Count - a.Count);
 
     // Get the top 10 reasons
